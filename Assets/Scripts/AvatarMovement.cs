@@ -25,15 +25,15 @@ public class AvatarMovement : MonoBehaviour {
     }
 
 	void Update() {
-	    
-        if (controller.isGrounded) {
+		if (controller.isGrounded) {
 			velocity = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
 			velocity = transform.TransformDirection(velocity) * speed;
-            
-            if (Input.GetButton ("Jump")) {
-                velocity.y = jumpSpeed;
-                
+			if (Input.GetButton ("Jump")) {
+				velocity.y = jumpSpeed;
 			}
+		} else {
+			velocity = new Vector3(Input.GetAxis("Horizontal"), velocity.y / speed, Input.GetAxis("Vertical"));
+			velocity = transform.TransformDirection(velocity) * speed;
 		}
 		velocity.y -= gravity * Time.deltaTime;
 		controller.Move(velocity * Time.deltaTime);
