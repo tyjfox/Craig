@@ -1,19 +1,21 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-public class CameraFollow : MonoBehaviour {
+namespace Assets.Scripts
+{
+    public class CameraFollow : MonoBehaviour {
 
-	public GameObject Avatar;
-	Transform target;
-	float distance = 12.0F;
+        public GameObject Avatar;
+        Transform target;
+        float distance = 12.0F;
 
-	void Start () {
-		target = Avatar.transform;
-	}
+        void Start () {
+            target = Avatar.transform;
+        }
 
-	void Update () {
-		transform.position = target.position - target.forward * distance;
-		transform.position = new Vector3 (transform.position.x, transform.position.y + 4.0f, transform.position.z);
-		transform.LookAt(target.position);
-	}
+        void Update () {
+            transform.position = target.position - target.forward * distance;
+            transform.position = new Vector3 (transform.position.x, transform.position.y + 4.0f, transform.position.z);
+            transform.LookAt(target.position);
+        }
+    }
 }
