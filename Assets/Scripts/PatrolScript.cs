@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Allosaurus : MonoBehaviour
+public class PatrolScript : MonoBehaviour
 {
 
     public Transform[] waypoints;

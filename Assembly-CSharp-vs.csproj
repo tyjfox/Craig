@@ -46,9 +46,9 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Allosaurus.cs" />
      <Compile Include="Assets\Scripts\AvatarMovement.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\PatrolScript.cs" />
      <Compile Include="Assets\Sprites\Allosaurus\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
      <Compile Include="Assets\Sprites\Allosaurus\Standard Assets\Image Effects (Pro Only)\BlurEffect.cs" />
      <Compile Include="Assets\Sprites\Allosaurus\Standard Assets\Image Effects (Pro Only)\ColorCorrectionEffect.cs" />
