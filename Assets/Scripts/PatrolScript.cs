@@ -19,7 +19,7 @@ public class PatrolScript : MonoBehaviour
     private Transform player;
 
     private bool chasing = false;
-    private float chaseThreshold = 6;
+    private float chaseThreshold = 10;
     private float giveUpThreshold = 20;
     private float attackThreshold = 3f;
     private float attackRepeatTime = 3;
